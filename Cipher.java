@@ -16,7 +16,7 @@ public class Cipher
         for (int i = 0; i < inputString.length(); i++)   
         {
             char temp = inputString.charAt(i);
-            outputString += replaceChar('a',false);
+            outputString += replaceChar(temp,false);
         }
 
         return outputString;
@@ -28,7 +28,7 @@ public class Cipher
         String outputString = "";
         for(int i = 0; i < inputString.length(); i++){ 
             char temp = inputString.charAt(i);
-            outputString += replaceChar('a',true);
+            outputString += replaceChar(temp,true);
         }
         return outputString;
     }
@@ -44,7 +44,7 @@ public class Cipher
             for (int i = 0; i < ORIGINAL_ALPHABET.length(); i++)   
             {
                 if(ORIGINAL_ALPHABET.charAt(i) == inputChar) {
-                    return CIPER_ALPHABET.charA(i);
+                    return CIPHER_ALPHABET.charAt(i);
                 }
             }
         }
