@@ -21,7 +21,7 @@ public class Cipher
 
         return outputString;
     }
-
+    //decrypt the message
     public String decrypt(String inputString) {
         
         // output string will be collected in this variable, one char at a time
@@ -62,3 +62,4 @@ public class Cipher
     }
 
 }   
+
