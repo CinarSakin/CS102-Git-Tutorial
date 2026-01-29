@@ -28,6 +28,7 @@ public class Cipher
         String outputString = "";
         for(int i = 0; i < inputString.length(); i++){ 
             char temp = inputString.charAt(i);
+            //replaced true with false
             outputString += replaceChar(temp,false);
         }
         return outputString;
@@ -62,3 +63,4 @@ public class Cipher
     }
 
 }   
+
